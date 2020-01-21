@@ -1,0 +1,74 @@
+safeDelMan(1)		    General Commands Manual		 safeDelMan(1)
+
+
+
+NAME
+       safeDel - Move some specified files into the a the trashCan directory.
+
+
+SYNOPSIS
+       safeDel [OPTION]...
+
+
+DESCRIPTION
+       The  main objectif of safeDel is to simulate the functionning of a win-
+       dows recycle bin. Take some file and move  or  restore  them  from  the
+       trashCan.
+
+
+   OPTIONS
+       -l     Output  a  list on screen of the contents of the trashCan direc-
+	      tory
+
+       -r file
+	      Get a specified file, from the trashCan directory and  place  it
+	      in the current directory.
+
+
+       -d     Delete interactively the contents of the trashCan directory
+
+
+       -t     Display  total  usage in bytes of the trashCan directory for the
+	      user of the trashCan.
+
+
+       -m     Start monitor script process.
+
+
+       -k     Kill current users monitor script processes.
+
+
+EXAMPLES
+       list all files in trashCan directory
+	      safeDel -l
+
+
+       Recover a file called bin_1.txt
+	      safeDel -r bin_1.txt
+
+
+       Delete all files in the trashCan Directory
+	      safeDel -d
+
+
+       Display trashCan directory disk usage in bytes
+	      safeDel -t
+
+
+       Start monitor script process
+	      safeDel -m
+
+
+       Kill monitor script process
+	      safeDel -k
+
+
+AUTHOR
+       Written by Kone Fanhatcha
+
+       African Leadership University (ALU)
+
+
+
+
+			   safeDEl V.1.0 manual page		 safeDelMan(1)

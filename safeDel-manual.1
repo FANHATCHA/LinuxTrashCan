@@ -1,0 +1,73 @@
+.TH safeDelMan 1 "safeDEl V.1.0 manual page"
+
+.SH NAME
+safeDel \- Move some specified files into the a the trashCan directory.
+
+.SH SYNOPSIS
+.B safeDel 
+[\fIOPTION\fR]...
+
+.SH DESCRIPTION
+The main objectif of safeDel is to simulate the functionning of a windows recycle bin. Take some file and move or restore them from the trashCan.
+
+.SS OPTIONS
+.TP 
+.B \-l 
+Output a list on screen of the contents of the trashCan directory
+.TP 
+.B \-r \fIfile\fR
+Get a specified file, from the trashCan directory and place it in the current directory.
+
+.TP 
+.B \-d 
+Delete interactively the contents of the trashCan directory
+
+.TP 
+.B \-t 
+Display total usage in bytes of the trashCan directory for the user of the trashCan.
+
+.TP 
+.B \-m 
+Start monitor script process.
+
+.TP 
+.B \-k 
+Kill current user’s monitor script processes.
+
+.SH EXAMPLES
+.TP
+list all files in trashCan directory
+.B safeDel
+\-l
+
+.TP
+Recover a file called bin_1.txt
+.B safeDel
+\-r bin_1.txt
+
+.TP
+Delete all files in the trashCan Directory
+.B safeDel
+\-d
+
+.TP
+Display trashCan directory disk usage in bytes
+.B safeDel
+\-t
+
+.TP
+Start monitor script process
+.B safeDel
+\-m
+
+.TP
+Kill monitor script process
+.B safeDel
+\-k
+
+.SH AUTHOR
+Written by Kone Fanhatcha
+
+.AI
+African Leadership University (ALU)
+
